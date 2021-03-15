@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/mainFragment">
+
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.martin.exam.ui.main.MainFragment"
+        android:label="MainFragment" >
+<!--        <action-->
+<!--            android:id="@+id/action_mainFragment_to_navigation_home"-->
+<!--            app:destination="@id/homeFragment"-->
+<!--            app:popUpToInclusive="true"/>-->
+<!--        <action-->
+<!--            android:id="@+id/action_mainFragment_to_navigation_sponsor"-->
+<!--            app:destination="@id/sponsorFragment"-->
+<!--            app:popUpToInclusive="true"/>-->
+<!--        <action-->
+<!--            android:id="@+id/action_mainFragment_to_navigation_promo"-->
+<!--            app:destination="@id/promoFragment"-->
+<!--            app:popUpToInclusive="true"/>-->
+<!--        <action-->
+<!--            android:id="@+id/action_mainFragment_to_navigation_user"-->
+<!--            app:destination="@id/userFragment"-->
+<!--            app:popUpToInclusive="true"/>-->
+<!--        <action-->
+<!--            android:id="@+id/action_mainFragment_to_navigation_service"-->
+<!--            app:destination="@id/serviceFragment"-->
+<!--            app:popUpToInclusive="true"/>-->
+        <action
+            android:id="@+id/action_mainFragment_to_zooDetailFragment"
+            app:destination="@id/zooDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zooDetailFragment"
+        android:name="com.martin.exam.ui.zooDetail.ZooDetailFragment"
+        android:label="ZooDetailFragment" >
+        <action
+            android:id="@+id/action_zooDetailFragment_to_plantDetailFragment"
+            app:destination="@id/plantDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/plantDetailFragment"
+        android:name="com.martin.exam.ui.plantDetail.PlantDetailFragment"
+        android:label="PlantDetailFragment" />
+
+
+</navigation>

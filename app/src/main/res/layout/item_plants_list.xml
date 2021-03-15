@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivPlant"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPlantName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="12345"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/ltamArrow"
+        app:layout_constraintStart_toEndOf="@+id/ivPlant"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvPlantBrief"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="14sp"
+        android:textColor="@color/baby_blue"
+        app:layout_constraintEnd_toStartOf="@+id/ltamArrow"
+        app:layout_constraintStart_toEndOf="@+id/ivPlant"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlantName" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/arrow"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:src="@drawable/ic_baseline_arrow_right_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ltamArrow"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:rotation="180"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_speed="0.5"
+        app:lottie_rawRes="@raw/arrow" />
+</androidx.constraintlayout.widget.ConstraintLayout>

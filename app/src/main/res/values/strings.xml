@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">exam</string>
+    <string name="no_network_connectivity">No Network Connectivity</string>
+
+</resources>
